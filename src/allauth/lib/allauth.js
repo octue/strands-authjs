@@ -1,6 +1,6 @@
 import { getCSRFToken } from './django'
 
-const BASE_URL = `${process.env.NEXT_PUBLIC_BACKEND_URL}auth/api/browser/v1`
+const BASE_URL = `${process.env.NEXT_PUBLIC_API_URL}auth/api/browser/v1`
 
 const ACCEPT_JSON = {
   accept: 'application/json',
