@@ -1,0 +1,64 @@
+exclude: '.vscode/|.git/|.pytest_cache/|((?:[^/]*/)*)(.svg)|((?:[^/]*/)*)(.xml)'
+default_stages: [commit]
+fail_fast: true
+default_language_version:
+  python: python3 # force all unspecified python hooks to run python3
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=10240']
+      - id: check-json
+      - id: check-yaml
+      - id: end-of-file-fixer
+      # - id: no-commit-to-branch
+      - id: trailing-whitespace
+
+  - repo: https://github.com/windpioneers/pre-commit-hooks
+    rev: 0.0.5
+    hooks:
+      - id: check-branch-name
+        args:
+          # Main branch...
+          - '^main$'
+          # Or a descriptive kebab-case branch name
+          #   which, if it includes an issue number, will
+          #   auto-link pull requests to that issue on github, eg:
+          #   my-branch-to-fix-issue-#6
+          - '^([a-z][a-z0-9#/]*)(-[a-z0-9#]+)*$'
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v3.0.2'
+    hooks:
+      - id: prettier
+
+  # - repo: https://github.com/pre-commit/mirrors-eslint
+  #   rev: v7.32.0
+  #   hooks:
+  #     - id: eslint
+  #       files: \.[jt]sx?$ # *.js, *.jsx, *.ts and *.tsx
+  #       types: [file]
+  #       args: ['--fix']
+  #       additional_dependencies:
+  #         - eslint@^7.32.0
+  #         - eslint-config-prettier@^8.3.0
+  #         - prettier@^2.3.0
+  #         - gatsby@^4.11.0 # Requires the various eslint plugin dependencies with the right versions
+  #         - '@typescript-eslint/eslint-plugin@^2.34.0'
+  #         - '@typescript-eslint/parser@^2.0.0'
+  #         - 'babel-loader@^8.2.3'
+  #         - '@babel/core@^7.17.8'
+  #         - '@babel/preset-react@^7.16.7'
+  #         - 'eslint-config-prettier@^8.5.0'
+  #         - 'eslint-plugin-storybook@^0.4.1'
+  #         - 'storybook@^6.3.12'
+  #         - 'typescript@^4.5.2'
+
+  - repo: https://github.com/octue/conventional-commits
+    rev: 0.6.3
+    hooks:
+      - id: check-commit-message-is-conventional
+        stages: [commit-msg]
+        args:
+          - --maximum-body-line-length=2000

@@ -1,0 +1,18 @@
+{
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "semi": false,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "whyDidYouRender",
+    "^react$",
+    "(<THIRD_PARTY_MODULES>|classnames|zod|react-hook-form|@hookform|next|@headlessui)",
+    "^(@allauth|@hooks|@lib|@utilities)(.*)$",
+    "^(@components|@containers|@feedback|@forms|@pages)/(.*)$",
+    "^[.]",
+    "^[constants.js]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "tabWidth": 2
+}
