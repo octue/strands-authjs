@@ -11,7 +11,7 @@ First, checkout and run the backend so you have a server at http://localhost:800
 Next, add the following line to your `.env.local` file:
 
 ```
-NEXT_PUBLIC_API_URL=http://localhost:8000/
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
 Then run the development server:
