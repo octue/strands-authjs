@@ -10,7 +10,7 @@ export function useConfig() {
   return useContext(AuthContext)?.config
 }
 
-export function useUser() {
+export function useCurrentUser() {
   const auth = useContext(AuthContext)?.auth
   return authInfo(auth).user
 }

@@ -18,8 +18,8 @@ const Button: FC<ButtonProps> = ({
       onClick={onClick}
       className={classNames(
         'text-white flex justify-center items-center rounded-md px-6 py-1.5 text-sm font-semibold leading-6 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
-        'bg-theme-600 border-theme-600 hover:bg-theme-500 focus-visible:outline-theme-600',
-        'dark:bg-theme-500 dark:border-theme-500 dark:hover:bg-theme-400 dark:focus-visible:outline-theme-500',
+        'bg-primary-600 border-primary-600 hover:bg-primary-500 focus-visible:outline-primary-600',
+        'dark:bg-primary-500 dark:border-primary-500 dark:hover:bg-primary-400 dark:focus-visible:outline-primary-500',
         className
       )}
     >

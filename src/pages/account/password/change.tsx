@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { useUser } from '@allauth/hooks'
+import { useCurrentUser } from '@allauth/hooks'
 import useSetErrors from '@allauth/hooks/useSetErrors'
 import { changePassword } from '@allauth/lib/allauth'
 import { AuthenticatedRoute } from '@allauth/routing'
@@ -32,7 +32,7 @@ interface FormData {
 
 function PasswordChange() {
   const router = useRouter()
-  const hasCurrentPassword = useUser().has_usable_password
+  const hasCurrentPassword = useCurrentUser().has_usable_password
 
   const {
     register,

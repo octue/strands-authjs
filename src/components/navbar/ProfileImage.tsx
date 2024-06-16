@@ -7,7 +7,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import type { ImageProps } from 'next/image'
 
-import { useUser } from '@allauth/hooks'
+import { useCurrentUser } from '@allauth/hooks'
 
 type ProfileImage = Omit<ImageProps, 'src'>
 
@@ -16,7 +16,7 @@ type ProfileImage = Omit<ImageProps, 'src'>
 const ProfileImage: FC<ProfileImage> = (props) => {
   const [error, setError] = useState(false)
 
-  const user = useUser()
+  const user = useCurrentUser()
 
   const avatar = `https://storage.cloud.google.com/amy-assets-main-public/user_images/${user.username}.png`
 

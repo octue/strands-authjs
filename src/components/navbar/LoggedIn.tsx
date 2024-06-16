@@ -24,7 +24,7 @@ interface Props {
 }
 
 const LoggedIn: React.FC<Props> = ({ children }) => {
-  // const user = useUser()
+  // const user = useCurrentUser()
   // const config = useConfig()
   // const avatar =
   //   'https://storage.cloud.google.com/amy-assets-main-public/user_images/oneuser.png'
@@ -38,7 +38,7 @@ const LoggedIn: React.FC<Props> = ({ children }) => {
               {/* Mobile menu button */}
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {children ? (
-                  <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-theme-500">
+                  <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -71,7 +71,7 @@ const LoggedIn: React.FC<Props> = ({ children }) => {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Menu as="div" className="relative ml-3">
                   <div>
-                    <MenuButton className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-theme-500 focus:ring-offset-2">
+                    <MenuButton className="relative flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <ProfileImage
@@ -139,12 +139,12 @@ const LoggedIn: React.FC<Props> = ({ children }) => {
 
           <DisclosurePanel className="sm:hidden">
             <div className="space-y-1 pb-4 pt-2">
-              {/* Current: "bg-theme-50 border-theme-500 text-theme-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              {/* Current: "bg-primary-50 border-primary-500 text-primary-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               {/* TODO REFACTOR REQUEST This should be a next link for improved performance */}
               {/* <DisclosureButton
                 as="a"
                 href="/account"
-                className="block border-l-4 border-theme-500 bg-theme-50 py-2 pl-3 pr-4 text-base font-medium text-theme-700"
+                className="block border-l-4 border-primary-500 bg-primary-50 py-2 pl-3 pr-4 text-base font-medium text-primary-700"
               >
                 Account
               </DisclosureButton> */}

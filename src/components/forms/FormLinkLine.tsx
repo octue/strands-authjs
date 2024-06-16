@@ -21,7 +21,7 @@ const FormLinkLine: FC<Props> = ({ classes, purpose, action, href }) => {
     classes?.purpose
   )
   const actionClasses = classNames(
-    'font-semibold leading-6 text-theme-600 hover:text-theme dark:text-theme-300 dark:hover:text-theme-300',
+    'font-semibold leading-6 text-primary-600 hover:text-primary dark:text-primary-300 dark:hover:text-primary-300',
     classes?.action
   )
   return (

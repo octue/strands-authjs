@@ -7,4 +7,4 @@ export {
   AuthenticatedRoute,
   AnonymousRoute,
 } from './routing'
-export { useConfig, useAuth, useUser, useAuthStatus } from './hooks'
+export { useConfig, useAuth, useCurrentUser, useAuthStatus } from './hooks'

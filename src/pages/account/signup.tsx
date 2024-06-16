@@ -64,7 +64,7 @@ function SignUp() {
           required
         >
           <Link
-            className="ml-2 mt-1 -mb-1 text-xs text-theme-600 hover:text-theme-500 dark:text-theme-300"
+            className="ml-2 mt-1 -mb-1 text-xs text-primary-600 hover:text-primary-500 dark:text-primary-300"
             href="/account/login"
           >
             Already registered? Log in!

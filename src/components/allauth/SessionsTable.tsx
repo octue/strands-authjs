@@ -46,7 +46,7 @@ const SessionsTable: React.FC<Props> = ({
             disabled={disabled || otherSessions.length <= 1}
             onClick={() => endSessions(otherSessions)}
             type="button"
-            className="block rounded-md bg-theme-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-theme-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme-600"
+            className="block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
             Log out all other sessions
           </button>
@@ -98,7 +98,7 @@ const SessionsTable: React.FC<Props> = ({
               <tbody className="divide-y divide-gray-200">
                 {sessions.map((session) => (
                   <tr key={session.created_at}>
-                    <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-theme-600 sm:pl-0">
+                    <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-primary-600 sm:pl-0">
                       {session.is_current ? <BadgeCheck></BadgeCheck> : ''}
                     </td>
                     <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-500 sm:pl-0">
@@ -115,7 +115,7 @@ const SessionsTable: React.FC<Props> = ({
                     </td>
                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                       <button
-                        className="text-theme-600 hover:text-theme-800 disabled:text-gray-400"
+                        className="text-primary-600 hover:text-primary-800 disabled:text-gray-400"
                         disabled={disabled}
                         onClick={() => endSessions([session])}
                       >

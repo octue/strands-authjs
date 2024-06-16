@@ -7,7 +7,7 @@ module.exports = {
   ],
   // Allows us to optionally apply class via our layout.
   darkMode: 'selector',
-  theme: {
+  primary: {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -16,7 +16,7 @@ module.exports = {
       },
       colors: {
         'transparent-white': 'rgba(255,255,255,.3)',
-        theme: {
+        primary: {
           DEFAULT: '#C6426E',
           50: '#F1CFDA',
           100: '#ECBFCE',

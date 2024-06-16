@@ -50,7 +50,7 @@ const EmailsTable: React.FC<Props> = ({
             disabled={disabled}
             onClick={() => setOpen(true)}
             type="button"
-            className="block rounded-md bg-theme-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-theme-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-theme-600"
+            className="block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
             Add email
           </button>
@@ -92,7 +92,7 @@ const EmailsTable: React.FC<Props> = ({
                       <div className="flex items-center">
                         {email.email}
                         {email.primary && (
-                          <span className="ml-5 inline-flex items-center rounded-md bg-theme-50/60 px-2 py-1 text-xs font-medium text-theme-700 ring-1 ring-inset ring-theme-600/20">
+                          <span className="ml-5 inline-flex items-center rounded-md bg-primary-50/60 px-2 py-1 text-xs font-medium text-primary-700 ring-1 ring-inset ring-primary-600/20">
                             Primary
                           </span>
                         )}
@@ -114,7 +114,7 @@ const EmailsTable: React.FC<Props> = ({
                     <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                       {!email.verified && (
                         <button
-                          className="text-theme-600 hover:text-theme-500 disabled:text-gray-400 "
+                          className="text-primary-600 hover:text-primary-500 disabled:text-gray-400 "
                           disabled={disabled}
                           onClick={() => verify(email.email)}
                         >
@@ -122,7 +122,7 @@ const EmailsTable: React.FC<Props> = ({
                         </button>
                       )}
                       <button
-                        className="ml-6 text-theme-600 hover:text-theme-500 disabled:text-gray-400 "
+                        className="ml-6 text-primary-600 hover:text-primary-500 disabled:text-gray-400 "
                         disabled={disabled || email.primary || !email.verified}
                         onClick={() => markPrimary(email.email)}
                       >

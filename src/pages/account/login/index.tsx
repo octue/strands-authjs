@@ -71,7 +71,7 @@ function Login() {
           required
         >
           <Link
-            className="ml-2 mt-1 -mb-1 text-xs text-theme-600 hover:text-theme-500 dark:text-theme-300"
+            className="ml-2 mt-1 -mb-1 text-xs text-primary-600 hover:text-primary-500 dark:text-primary-300"
             href="/account/signup"
           >
             Not registered yet?
@@ -88,7 +88,7 @@ function Login() {
           required
         >
           <Link
-            className="ml-2 text-xs mt-1 -mb-1 text-theme-600 hover:text-theme-500 dark:text-theme-300"
+            className="ml-2 text-xs mt-1 -mb-1 text-primary-600 hover:text-primary-500 dark:text-primary-300"
             href="/account/password/reset"
           >
             Forgot password?
@@ -107,7 +107,7 @@ function Login() {
         <div className="flex-grow h-[1px] bg-gray-300 dark:bg-white/70" />
       </div>
       <Link
-        className="mt-4 text-theme-600 hover:text-white flex justify-center border items-center rounded-md px-6 py-1.5 text-sm font-normal leading-6 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-none border-theme-600 hover:border-theme-500 hover:bg-theme-500 focus-visible:outline-theme-500"
+        className="mt-4 text-primary-600 hover:text-white flex justify-center border items-center rounded-md px-6 py-1.5 text-sm font-normal leading-6 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-none border-primary-600 hover:border-primary-500 hover:bg-primary-500 focus-visible:outline-primary-500"
         href="/account/login/code"
       >
         Mail me a login code
