@@ -1,8 +1,8 @@
 import { useConfig } from '@allauth/hooks'
 import { AuthenticatedRoute } from '@allauth/routing'
 
-import Layout from '@components/layouts/Layout'
-import PageHeader from '@components/layouts/PageHeader'
+import Layout from '@components/layout/Layout'
+import PageHeader from '@components/layout/PageHeader'
 import Emails from '@containers/allauth/emails'
 import Providers from '@containers/allauth/providers'
 import Sessions from '@containers/allauth/sessions'

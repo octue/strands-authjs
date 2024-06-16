@@ -11,8 +11,8 @@ import { AnonymousRoute } from '@allauth/routing'
 import Button from '@components/buttons/Button'
 import ErrorBox from '@components/forms/ErrorBox'
 import InputGroup from '@components/forms/fields/InputGroup'
-import FormLayout from '@components/layouts/FormLayout'
-import LogoTitle from '@components/layouts/LogoTitle'
+import FormLayout from '@components/layout/FormLayout'
+import LogoTitle from '@components/layout/LogoTitle'
 
 // import ProviderList from '../../socialaccount/ProviderList'
 

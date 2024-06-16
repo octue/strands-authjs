@@ -8,8 +8,8 @@ import Button from '@components/buttons/Button'
 import PaleButton from '@components/buttons/PaleButton'
 import LogoutIcon from '@components/icons/Logout'
 import ReturnIcon from '@components/icons/Return'
-import FormLayout from '@components/layouts/FormLayout'
-import LogoTitle from '@components/layouts/LogoTitle'
+import FormLayout from '@components/layout/FormLayout'
+import LogoTitle from '@components/layout/LogoTitle'
 
 export default function Logout() {
   const [loading, setLoading] = useState(false)

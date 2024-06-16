@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import Head from 'next/head'
 
 import { IconProps } from '@components/icons/_type'
-import Breadcrumbs, { Breadcrumb } from '@components/layouts/Breadcrumbs'
+import Breadcrumbs, { Breadcrumb } from '@components/layout/Breadcrumbs'
 
 interface Icon {
   text: string

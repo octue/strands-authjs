@@ -2,7 +2,7 @@ import React from 'react'
 
 import classNames from 'classnames'
 
-import NavBar from '@components/navbar/NavBar'
+import NavBar from '@components/layout/navbar/NavBar'
 
 interface Classes {
   header?: string
